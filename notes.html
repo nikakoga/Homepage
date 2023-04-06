@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="notesBody">
+
+    <header>
+        <h1 class="notesTableofContentHeader">Spis treści</h1>
+        <p class="notesParagraph">
+            <a href="#ZnacznikiHTML">Znaczniki HTML</a><br>
+            <a href="#StyleCSS">Style</a><br>
+        </p>
+    </header>
+
+
+    <main>
+        <article id="ZnacznikiHTML">
+           
+                <h1 class="notesArticleHeader">Znaczniki HTML</h1>
+            
+
+            <p class="notesParagraph">
+                em lub i - robią <em>kursywę</em> <br />
+                strong lub b - <b>pogrubiają</b> <br />
+                a href - link do hiperłącza <br />
+                id - identyfikator, przydaje się do nawigacji w obrębie stronki<br>
+                img src="tutaj nazwa" alt="opis zdjecia dla osob niewidomych" <br>
+            </p>
+
+        </article>
+        <article id="StyleCSS">
+            <header>
+                <h1 class="notesArticleHeader">Style w CSS</h1>
+            </header>
+            <h2 class="notesSectionHeader">Hierarchia</h2>
+            <img src="hierarchia_znaczników.png" alt="hierarchia znaczników">
+            <p class="notesParagraph">
+                Pierwsze są w nawiasie bo lepiej ich nie stosować<br><br>
+                W przypadku gdy mamy dwa znaczniki o tej samej wadze czyli np chcemy na jeden kolor wystylizować body h1 (czyli wszystkie h1 obecne w body których jest np 3) oraz section h1 (których jest 5) wygrywa większa ilość wystąpień i ten kolor będzie widoczny a drugi w opcji "zbadaj" będzie widoczny jako przekreślony<br>Poniżej przykład jak zbadać ile jest wystąpień i na którym miejscu w hierarchi. Jeśli remis jest i w wadze i w ilości wystąpień to wygrywa ten którego styl jest bliżej w kodzie w pliku CSS
+            </p>
+            <img src="remis_wagi.png" alt="remis wagi">
+
+            <section>
+
+                <h2 class="notesSectionHeader">Stylowanie elementami</h2>
+
+                <p class="notesParagraph">
+                    <img src="stylowanie_elementami.png" alt="przykład stylowania elementami">
+                </p>
+            </section>
+
+            <section>
+                <h2 class="notesSectionHeader">Stylowanie znacznikiem <em>style</em></h2>
+                <p class="notesParagraph">
+                    <img src="stylowanie_stylem.png" alt="przykład stylowania z użyciem znacznika styl">
+                    <br>Nie jest to jednak dobra praktyka bo w razie potrzeby zmiany trzeba przejrzeć cały dokument i szukać
+                    tych nagłówków
+                </p>
+            </section>
+
+            <section>
+
+                <h2 class="notesSectionHeader">Stylowanie w klasie</h2>
+
+                <p class="notesParagraph">
+                    Stylowanie w klasie to najlepsza praktyka<br><br>
+                    W HTML<br>
+                    <img src="klasa_w_HTML.png" alt="klasa w HTML">
+                    <br>W CSS<br>
+                    <img src="klasa_w_CSS.png" alt="klasa w CSS">
+                    <br>Można też robić to po ID ale wtedy nie .nazwaklasy tylko #nazwaID ale to nie jest dobra praktyka
+                    <br><b>W ten sposób można dwa nagłówki typu h1 wystylować zupełnie inaczej, niezależnie od siebie lub np nadać sekcji pamiętniczek inne tło niż całej reszcie strony</b>
+                </p>
+            </section>
+
+            
+
+        </article>
+        <a href="index.html">Powrót do strony głównej</a>
+    </main>
+    <footer>
+        You go girl!!
+    </footer>
+</body>
+
+</html>

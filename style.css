@@ -1,0 +1,49 @@
+.mainPagebody {
+    
+    background: #fefe;
+   
+}
+
+.mainHeader{
+    color: deeppink;
+}
+
+.mainPagesection {
+    color: hotpink;
+    font-size:20px
+}
+
+.mainArticle {
+    color: rgb(246, 155, 169);
+}
+.mainParagraph{
+    color:black;
+}
+
+
+.notesBody{
+    background-color: lemonchiffon;
+}
+.notesTableofContentHeader{
+color:orangered
+}
+.notesArticleHeader{
+color:rgb(242, 114, 9);
+}
+.notesSectionHeader{
+color:orange;
+}
+.notesParagraph{
+    color:black;
+}
+
+
+.usefullLinksHeader{
+    color:yellow;
+}
+.usefullLinksBody{
+    background-color: cornflowerblue;
+}
+.usefullLinksParagraph{
+    color:black;
+}
