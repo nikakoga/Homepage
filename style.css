@@ -19,6 +19,9 @@
 .mainParagraph{
     color:black;
 }
+.mainPageNavigator{
+    color:blueviolet;
+}
 
 
 .notesBody{
@@ -36,6 +39,9 @@ color:orange;
 .notesParagraph{
     color:black;
 }
+.notesNavigator{
+    color:red;
+}
 
 
 .usefullLinksHeader{
@@ -46,4 +52,8 @@ color:orange;
 }
 .usefullLinksParagraph{
     color:black;
+}
+.usefullLinksNavigator
+{
+    color:aqua;
 }
