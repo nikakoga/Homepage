@@ -17,16 +17,23 @@
         <h1 class="notesTableofContentHeader">Spis treści</h1>
         <p class="notesParagraph">
             <a href="#ZnacznikiHTML" class="notesNavigator">Znaczniki HTML</a><br>
-            <a href="#StyleCSS" class = "notesNavigator">Style</a><br>
+            <a href="#StylesCSS" class="notesNavigator">Style</a><br>
+            <a href="#Box_model" class="notesNavigator">Box model</a><br>
         </p>
     </header>
 
 
     <main>
+        <article>
+            <h1 class="notesArticleHeader">Przydatne skróty klawiszowe</h1>
+            <p class="notesParagraph">
+                ctr + shift + P -> wysuwa pasek gdzie klikasz "format document"
+            </p>
+        </article>
+
         <article id="ZnacznikiHTML">
-           
-                <h1 class="notesArticleHeader">Znaczniki HTML</h1>
-            
+
+            <h1 class="notesArticleHeader">Znaczniki HTML</h1>
 
             <p class="notesParagraph">
                 em lub i - robią <em>kursywę</em> <br />
@@ -34,18 +41,23 @@
                 a href - link do hiperłącza <br />
                 id - identyfikator, przydaje się do nawigacji w obrębie stronki<br>
                 img src="tutaj nazwa" alt="opis zdjecia dla osob niewidomych" <br>
+                <i>Disclaimer: </i> jeśli masz zdjęcia w innym folderze to załączasz ścieżke np img src = "./podfolder/nazwa foty"<br>
             </p>
 
         </article>
-        <article id="StyleCSS">
-            <header>
-                <h1 class="notesArticleHeader">Style w CSS</h1>
-            </header>
+        <article id="StylesCSS">
+
+            <h1 class="notesArticleHeader">Style w CSS</h1>
+
             <h2 class="notesSectionHeader">Hierarchia</h2>
             <img src="./images/hierarchia_znaczników.png" alt="hierarchia znaczników">
             <p class="notesParagraph">
                 Pierwsze są w nawiasie bo lepiej ich nie stosować<br><br>
-                W przypadku gdy mamy dwa znaczniki o tej samej wadze czyli np chcemy na jeden kolor wystylizować body h1 (czyli wszystkie h1 obecne w body których jest np 3) oraz section h1 (których jest 5) wygrywa większa ilość wystąpień i ten kolor będzie widoczny a drugi w opcji "zbadaj" będzie widoczny jako przekreślony<br>Poniżej przykład jak zbadać ile jest wystąpień i na którym miejscu w hierarchi. Jeśli remis jest i w wadze i w ilości wystąpień to wygrywa ten którego styl jest bliżej w kodzie w pliku CSS
+                W przypadku gdy mamy dwa znaczniki o tej samej wadze czyli np chcemy na jeden kolor wystylizować body h1
+                (czyli wszystkie h1 obecne w body których jest np 3) oraz section h1 (których jest 5) wygrywa większa
+                ilość wystąpień i ten kolor będzie widoczny a drugi w opcji "zbadaj" będzie widoczny jako
+                przekreślony<br>Poniżej przykład jak zbadać ile jest wystąpień i na którym miejscu w hierarchi. Jeśli
+                remis jest i w wadze i w ilości wystąpień to wygrywa ten którego styl jest bliżej w kodzie w pliku CSS
             </p>
             <img src="./images/remis_wagi.png" alt="remis wagi">
 
@@ -62,7 +74,8 @@
                 <h2 class="notesSectionHeader">Stylowanie znacznikiem <em>style</em></h2>
                 <p class="notesParagraph">
                     <img src="./images/stylowanie_stylem.png" alt="przykład stylowania z użyciem znacznika styl">
-                    <br>Nie jest to jednak dobra praktyka bo w razie potrzeby zmiany trzeba przejrzeć cały dokument i szukać
+                    <br>Nie jest to jednak dobra praktyka bo w razie potrzeby zmiany trzeba przejrzeć cały dokument i
+                    szukać
                     tych nagłówków
                 </p>
             </section>
@@ -78,12 +91,56 @@
                     <br>W CSS<br>
                     <img src="./images/klasa_w_CSS.png" alt="klasa w CSS">
                     <br>Można też robić to po ID ale wtedy nie .nazwaklasy tylko #nazwaID ale to nie jest dobra praktyka
-                    <br><b>W ten sposób można dwa nagłówki typu h1 wystylować zupełnie inaczej, niezależnie od siebie lub np nadać sekcji pamiętniczek inne tło niż całej reszcie strony</b>
+                    <br><b>W ten sposób można dwa nagłówki typu h1 wystylować zupełnie inaczej, niezależnie od siebie
+                        lub np nadać sekcji pamiętniczek inne tło niż całej reszcie strony</b>
                 </p>
             </section>
 
-            
+        </article>
+        <article id="Box_model">
+            <header>
+                <h1 class = "notesArticleHeader" > Box model</h1>
+            </header>
+            <section>
 
+                <h2 class="notesSectionHeader">Dopasowywanie rozmiaru</h2>
+                <p>
+                    Tymi parametrami można manipulować tylko jeśli strona ma display=block (nie działa na inline, chyba działa na block-inline)<br><br>
+                    <b>max-width i min-width</b> -> określają rozmiar powyżej/poniżej którego dana sekcja nie zmieni już
+                    bardziej swojego rozmiaru, niezależnie od tego jak zmniejszymy okno<br>
+                    <b>width</b> -> ustawiona na sztywno sprawi, że sekcja zawsze będzie miała taką samą szerokość nie zależnie
+                    od rozmiaru okna<br>
+                    <b>width/height x% </b>-> 100% sprawi, że sekcja będzie się dostosowywać tak aby wypełnić całą dostępną w rozmiarze<br>
+                    <i>Disclaimer:</i> ten procent jest brany z tego co jest wyżej. Jeśli w main jest 50% a w sekcji też damy 50% to rozmiar sekcji to połowa z 50 czyli 25%<br>
+                    <b>width x vw</b> -> różni się tym od tego width x%, że tutaj nie będzie trzeba brać pod uwagę tego co jest wyżej. width=50vw to połowa dostępnego rozmiaru okna i tyle. Nie ma filozofii i wpływu innych rzeczy.<br>
+                    <b>height x vw</b> -> tekst pojawi się w miejscu zależnym od rozmiaru okna. Jeśli ustawimy, że trzeba przeskrolować całą długość okna to nieważne jak zwiększymy okno wciąż będzie trzeba je całe przescrollować <br>
+                    <i>Disclaimer:</i> można tego używać również w font-size i mamy czcionke która zwiększa się w zaleśności od strony
+                    okna przestrzeń, jednakże nie przekroczy min i max width
+                    <b>height-></b> lepiej tym parametrem nie ruszać, ale istnieje taka możliwość<br>
+                    <b>overflow:scroll</b> ->sam overflow robi, że tekst jeśli jest dłuższy niż zadana wysokość, będzie się ucinał po przekroczeniu tej wysokości. Gdyby nie overflow nachodziłby na następne rzeczy poniżej. Overflow scroll natomiast sprawia, że jeśli tekst nie mieści się w wyznaczonej sekcji pojawia się scroll i możemy przewijać w obrębie tego tekstu.
+                </p>
+            </section>
+
+            <section>
+
+                <h2 class="notesSectionHeader">Border</h2>
+                <p>
+                    Tworzy ramkę dookoła<br>
+                    border: 3px nazwa_stylu (np solid to zwykła, dashed to przerywane kreseczki, dotted to kropeczki) #kolor <br>
+                    Można też każda z tych wartości definiować osobno np border-width: , border-style: , border-color: <br>
+                    A nawet border-bottom: , border-top: itp jeśli chcemy np oddzielić tekst tylko od góry, dołu czy boku
+                </p>
+
+            </section>
+
+            <section>
+
+                <h2 class = "notesSectionHeader">Padding</h2>
+                <p>
+                    <img src="./images/padding.png" alt="sposoby zapisu paddingu">
+                    <img src="./images/padding2.png" alt="padding wartości lustrzane">
+                </p>
+            </section>
         </article>
     </main>
     <footer>
