@@ -1,7 +1,13 @@
 .mainPagebody {
     
     background: #fefe;
+    padding: 20px;
    
+}
+
+.myPicture{
+
+    width: 100%
 }
 
 .mainHeader{
@@ -10,7 +16,8 @@
 
 .mainPagesection {
     color: hotpink;
-    font-size:20px
+    font-size:20px;
+    border-bottom: 3px dotted hotpink;
 }
 
 .mainArticle {
@@ -22,10 +29,14 @@
 .mainPageNavigator{
     color:blueviolet;
 }
+.mainFooter{
+    color: grey;
+}
 
 
 .notesBody{
     background-color: lemonchiffon;
+    padding: 20px;
 }
 .notesTableofContentHeader{
 color:orangered
@@ -44,16 +55,17 @@ color:orange;
 }
 
 
-.usefullLinksHeader{
-    color:yellow;
-}
 .usefullLinksBody{
-    background-color: cornflowerblue;
+    padding: 20px;
+    background-color: #E1F4CB;
+}
+.usefullLinksHeader{
+    color:#1FB18F;
 }
 .usefullLinksParagraph{
     color:black;
 }
 .usefullLinksNavigator
 {
-    color:aqua;
+    color:#0098A3
 }
