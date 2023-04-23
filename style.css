@@ -1,7 +1,8 @@
 .mainPagebody {
     
     background: #fefe;
-    padding: 20px;
+    margin:20px;
+    
    
 }
 
@@ -28,6 +29,13 @@
 }
 .mainPageNavigator{
     color:blueviolet;
+    position:fixed;
+    bottom:10px;
+    right:10px; 
+    background-color: #fefe;
+}
+.mainDiaryNavigator{
+    color:blueviolet;
 }
 .mainFooter{
     color: grey;
@@ -53,6 +61,13 @@ color:orange;
 .notesNavigator{
     color:red;
 }
+.notesTableOfContentNavigator{
+    color:red;
+    position:fixed;
+    bottom:10px;
+    right:10px; 
+}
+
 
 
 .usefullLinksBody{

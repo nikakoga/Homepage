@@ -14,11 +14,12 @@
     <header>
         <a href="mainPage.html" class=notesNavigator>Strona główna</a>
         <a href="usefull_links.html" class=notesNavigator>Przydatne linki</a>
-        <h1 class="notesTableofContentHeader">Spis treści</h1>
+        <h1 id="TableOfContent" class="notesTableofContentHeader">Spis treści</h1>
         <p class="notesParagraph">
             <a href="#ZnacznikiHTML" class="notesNavigator">Znaczniki HTML</a><br>
             <a href="#StylesCSS" class="notesNavigator">Style</a><br>
             <a href="#Box_model" class="notesNavigator">Box model</a><br>
+            <a href="#TableOfContent" class="notesTableOfContentNavigator">Spis treści</a><br>
         </p>
     </header>
 
@@ -128,7 +129,8 @@
                     Tworzy ramkę dookoła<br>
                     border: 3px nazwa_stylu (np solid to zwykła, dashed to przerywane kreseczki, dotted to kropeczki) #kolor <br>
                     Można też każda z tych wartości definiować osobno np border-width: , border-style: , border-color: <br>
-                    A nawet border-bottom: , border-top: itp jeśli chcemy np oddzielić tekst tylko od góry, dołu czy boku
+                    A nawet border-bottom: , border-top: itp jeśli chcemy np oddzielić tekst tylko od góry, dołu czy boku<br>
+                    border-radious: ilosc_pikseli px albo % okresla zaokrąglenie rogów ramki
                 </p>
 
             </section>
@@ -139,7 +141,37 @@
                 <p>
                     <img src="./images/padding.png" alt="sposoby zapisu paddingu">
                     <img src="./images/padding2.png" alt="padding wartości lustrzane">
+                    <br>
+                    Zamiast paddingu można użyć funkcji margin, ona też odsuwa od krawędzi ale w przeciwieństwie do paddingu nie liczy się nigdy w rozmiar. Aby wyśrodkować coś na stronie można zrobić margin:auto, który nawet zmniejsza się jak zmniejsza się stronę
                 </p>
+            </section>
+
+            <section>
+                <h2 class = "notesSectionHeader">Box-sizing Content-box vs Border-box</h2>
+                <p>
+                    <b>Border-box</b> - Wszystko aż do border ma sumarycznie stały rozmiar. Zwiększenie borderu lub paddingu zmniejszy rozmiar contentu. <br>Np : element o rozmiarze width: 100px i height:100px po dodaniu paddingu, border i margin (kazdy po 10px)bedzie mieć już tylko 60px (margin znajduje się poza border więc się nie wlicza)<br> Toteż 10 border + 10 padding + 60 text + 10 padding + 10 border = 100px całość a 60px content
+                    <br>
+                    <img src="./images/border_box.png" alt="border_box">
+                    <br>
+
+                    <b>Content-box</b> - Rozmiar kontentu jest stały a border i padding zwiększają rozmiar elementu..<br>
+                    Toteż 10+10+100+10+10=140px ekement a 100px kontent<br>
+                    <img src="./images/content_box.png" alt="content_box">
+                </p>
+            </section>
+            <section>
+                <h2 class = "notesSectionHeader">Position</h2>
+                <p>
+                    position:absolute i relative - coś o absolutnej pozycji może nachodzić na inne elementy. Relativ służy do określenia w pozycji startowej od której będziemy odejmować lub dodawać dla tego elementu o pozycji absolutnej. Można tym elementem wyjechać ustawiając parametry takie jak bottom, right itp na ujemne wartości pixeli. <br>
+                    position:fixed - sprawia, że relativem staje się okno czyli w miare scrollowania ten element jest cały czas na tej samej pozycji np:jakaś głupia reklama do scancelowania <br>
+                </p>
+            </section>
+            <section>
+                <h2 class = "notesSectionHeader">Z-index </h2>
+                    <p>
+                        to co ma wartość z-index o większej wartości jest bardziej na wierzchu w przypadku gdy dwa elementy na siebie nachodzą
+                    </p>
+                
             </section>
         </article>
     </main>
