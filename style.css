@@ -1,58 +1,53 @@
-.mainPagebody {   
+.mainPage{   
     background: #fefe;
     margin:20px;
 }
 
-.myPicture{
+.mainPage__Picture{
     width: 100%;
     padding-right:50px;
-  
 }
 
-.mainHeader{
-    color: deeppink;
-    padding-top:50px;
-}
-
-.mainPagesection {
+.mainPage__Header {
     color: hotpink;
-    font-size:20px;
+    font-size:25px;
     border-bottom: 3px dotted hotpink;
 }
-
-.mainArticle {
-    color: rgb(246, 155, 169);
+.mainPage__Header--Home{
+    color: deeppink;
+    font-size:40px;
+    padding-top:50px;
+    border-bottom:none;
 }
-.mainParagraph{
+.mainPage__Header--Diary--Date {
+    color: rgb(246, 155, 169);
+    font-size:20px
+}
+.mainPage__Paragraph{
     color:black;
 }
-.mainPageNavigator{
+.mainPage__Navigator{
     color:blueviolet;
-    background-color: #fefe;
+}
+.mainPage__Navigator--Start{
+
     position:fixed;
-    top:0px;
+    top:-20px;
     left:0px;
     box-sizing: border-box;
     padding:16px;
-    width:100%;
-    
+    width:100%; 
 }
-.mainDiaryNavigator{
-    color:blueviolet;
-}
-.mainPageToTopNavigator
+.mainPage__Navigator--Up
 {
     position:fixed;
     right:0px; 
     bottom:0px;
-    color:blueviolet;
-    background-color: #fefe;
-    width:100%;
+    
 }
-.mainFooter{
+.mainPage__Footer{
     color: grey;
 }
-
 
 .notesBody{
     background-color: lemonchiffon;
