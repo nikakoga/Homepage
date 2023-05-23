@@ -7,15 +7,15 @@ console.log(`My name is ${my_name} and I'm ${age} years old`);
 let bye = "No to hejkaaa 🚀";
 console.log(bye);
 
-const heading = document.querySelector('.mainHeader');
-console.log(heading.innerHTML);
+const newFragment = document.querySelector('.mainPage__Paragraph--JS');
+console.log(newFragment);
+newFragment.innerHTML = "Fragment dodany z JS";
 //inner HTML wyswietla tekst ktory sie tam znajduje
 
 
 //heading.innerHTML = 'POZDRO JS';      //TAK MOZNA MODYFIKOWAC TRESC
-//heading.innerHTML = '<strong>pozdro</strong> JS'   //mozna nawet tak
+//heading.innerHTML = '<strong>POZDRO</strong> JS'   //mozna nawet tak
 
-const paragraph = document.querySelectorAll('p');
-console.log(paragraph);
-//tutaj dostajemy node list mozna tez sie odwolac po indeksie
-console.log(paragraph[0]);
+//const paragraph = document.querySelectorAll('p');
+//console.log(paragraph);     //tutaj dostajemy node list mozna tez sie odwolac po indeksie
+//console.log(paragraph[0]);
