@@ -4,8 +4,9 @@
 }
 
 .mainPage__Picture{
-    width: 100%;
+    width: 90%;
     padding-right:50px;
+    margin-left: 0;
 }
 
 .mainPage__Header {
@@ -16,7 +17,7 @@
 .mainPage__Header--Home{
     color: deeppink;
     font-size:40px;
-    padding-top:50px;
+    padding-top:44px;
     border-bottom:none;
 }
 .mainPage__Header--Diary--Date {
@@ -25,14 +26,15 @@
 }
 .mainPage__Paragraph{
     color:black;
+    line-height: 32px;
 }
 .mainPage__Navigator{
     color:blueviolet;
 }
 .mainPage__Navigator--Start{
-
     position:fixed;
-    top:-20px;
+    margin-top: 0px;
+    top:0px;
     left:0px;
     box-sizing: border-box;
     padding:16px;
@@ -43,53 +45,55 @@
     position:fixed;
     right:0px; 
     bottom:0px;
+    width:auto;
     
 }
 .mainPage__Footer{
     color: grey;
 }
 
-.notesBody{
+.notes{
     background-color: lemonchiffon;
-    padding: 20px;
 }
-.notesTableofContentHeader{
+.notes__Header{
 color:orangered
 }
-.notesArticleHeader{
+.notes__Header--Article{
 color:rgb(242, 114, 9);
 }
-.notesSectionHeader{
+.notes__Header--Article--Chapter{
 color:orange;
 }
-.notesParagraph{
+.notes__Paragraph{
     color:black;
 }
-.notesNavigator{
+.notes__Navigator{
     color:red;
 }
-.notesTableOfContentNavigator{
-    color:red;
+.notes__Navigator--TableOfContent{
     position:fixed;
     bottom:10px;
     right:10px; 
     text-decoration: none;
-    background-color: lemonchiffon;
+}
+.notes__Footer{
+    color: grey;
 }
 
-
-
-.usefullLinksBody{
-    padding: 20px;
+.usefull{
+    margin: 20px;
     background-color: #E1F4CB;
 }
-.usefullLinksHeader{
+.usefull__Header{
     color:#1FB18F;
+    margin-left: 20px;
 }
-.usefullLinksParagraph{
-    color:black;
-}
-.usefullLinksNavigator
+.usefull__Navigator
 {
-    color:#0098A3
+    color:#0098A3;
+}
+.usefull__Paragraph
+{
+    color:#0098A3 ;
+    margin-left: 0;
 }

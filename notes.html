@@ -9,34 +9,34 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="notesBody">
+<body class="notes">
 
     <header>
-        <a href="mainPage.html" class=notesNavigator>Strona główna</a>
-        <a href="usefull_links.html" class=notesNavigator>Przydatne linki</a>
-        <h1 id="TableOfContent" class="notesTableofContentHeader">Spis treści</h1>
-        <p class="notesParagraph">
-            <a href="#ZnacznikiHTML" class="notesNavigator">Znaczniki HTML</a><br>
-            <a href="#StylesCSS" class="notesNavigator">Style</a><br>
-            <a href="#Box_model" class="notesNavigator">Box model</a><br>
-            <a href="#TableOfContent" class="notesTableOfContentNavigator">Spis treści</a><br>
+        <a href="mainPage.html" class= "notes notes__Navigator notes__Navigator--Start">Strona główna</a>
+        <a href="usefull_links.html" class="notes notes__Navigator notes__Navigator--Start">Przydatne linki</a>
+        <h1 id="TableOfContent" class="notes notes__Header notes__Header--TableofContent">Spis treści</h1>
+        <p class="notes notes__Paragraph">
+            <a href="#ZnacznikiHTML" class="notes notes__Navigator notes__Navigator--Content">Znaczniki HTML</a><br>
+            <a href="#StylesCSS" class="notes notes__Navigator notes__Navigator--Content">Style</a><br>
+            <a href="#Box_model" class="notes notes__Navigator notes__Navigator--Content">Box model</a><br>
+            <a href="#TableOfContent" class="notes notes__Navigator notes__Navigator--TableOfContent">Spis treści</a><br>
         </p>
     </header>
 
 
     <main>
         <article>
-            <h1 class="notesArticleHeader">Przydatne skróty klawiszowe</h1>
-            <p class="notesParagraph">
+            <h1 class="notes notes__Header notes__Header--Article">Przydatne skróty klawiszowe</h1>
+            <p class="notes notes__Paragraph">
                 ctr + shift + P -> wysuwa pasek gdzie klikasz "format document"
             </p>
         </article>
 
         <article id="ZnacznikiHTML">
 
-            <h1 class="notesArticleHeader">Znaczniki HTML</h1>
+            <h1 class="notes notes__Header notes__Header--Article notes__Header--Article--Chapter">Znaczniki HTML</h1>
 
-            <p class="notesParagraph">
+            <p class="notes notes__Paragraph">
                 em lub i - robią <em>kursywę</em> <br />
                 strong lub b - <b>pogrubiają</b> <br />
                 a href - link do hiperłącza <br />
@@ -48,11 +48,11 @@
         </article>
         <article id="StylesCSS">
 
-            <h1 class="notesArticleHeader">Style w CSS</h1>
+            <h1 class="notes notes__Header notes__Header--Article">Style w CSS</h1>
 
-            <h2 class="notesSectionHeader">Hierarchia</h2>
+            <h2 class="notes notes__Header notes__Header--Article notes__Header--Article--Chapter">Hierarchia</h2>
             <img src="./images/hierarchia_znaczników.png" alt="hierarchia znaczników">
-            <p class="notesParagraph">
+            <p class="notes notes__Paragraph">
                 Pierwsze są w nawiasie bo lepiej ich nie stosować<br><br>
                 W przypadku gdy mamy dwa znaczniki o tej samej wadze czyli np chcemy na jeden kolor wystylizować body h1
                 (czyli wszystkie h1 obecne w body których jest np 3) oraz section h1 (których jest 5) wygrywa większa
@@ -60,21 +60,21 @@
                 przekreślony<br>Poniżej przykład jak zbadać ile jest wystąpień i na którym miejscu w hierarchi. Jeśli
                 remis jest i w wadze i w ilości wystąpień to wygrywa ten którego styl jest bliżej w kodzie w pliku CSS
             </p>
-            <img src="./images/remis_wagi.png" alt="remis wagi">
+            <img src="./images/remis_wagi.png" alt="remis wagi" class = "notes notes__Picture">
 
             <section>
 
-                <h2 class="notesSectionHeader">Stylowanie elementami</h2>
+                <h2 class="notes notes__Header notes__Header--Article notes__Header--Article--Chapter">Stylowanie elementami</h2>
 
-                <p class="notesParagraph">
-                    <img src="./images/stylowanie_elementami.png" alt="przykład stylowania elementami">
+                <p class="notes notes__Paragraph">
+                    <img src="./images/stylowanie_elementami.png" alt="przykład stylowania elementami" class = "notes notes__Picture">
                 </p>
             </section>
 
             <section>
-                <h2 class="notesSectionHeader">Stylowanie znacznikiem <em>style</em></h2>
-                <p class="notesParagraph">
-                    <img src="./images/stylowanie_stylem.png" alt="przykład stylowania z użyciem znacznika styl">
+                <h2 class="notes notes__Header notes__Header--Article notes__Header--Article--Chapter">Stylowanie znacznikiem <em>style</em></h2>
+                <p class="notes notes__Paragraph">
+                    <img src="./images/stylowanie_stylem.png" alt="przykład stylowania z użyciem znacznika styl" class = "notes notes__Picture">
                     <br>Nie jest to jednak dobra praktyka bo w razie potrzeby zmiany trzeba przejrzeć cały dokument i
                     szukać
                     tych nagłówków
@@ -83,14 +83,14 @@
 
             <section>
 
-                <h2 class="notesSectionHeader">Stylowanie w klasie</h2>
+                <h2 class="notes notes__Header notes__Header--Article notes__Header--Article--Chapter">Stylowanie w klasie</h2>
 
-                <p class="notesParagraph">
+                <p class="notes notes__Paragraph">
                     Stylowanie w klasie to najlepsza praktyka<br><br>
                     W HTML<br>
-                    <img src="./images/klasa_w_HTML.png" alt="klasa w HTML">
+                    <img src="./images/klasa_w_HTML.png" alt="klasa w HTML" class = "notes notes__Picture">
                     <br>W CSS<br>
-                    <img src="./images/klasa_w_CSS.png" alt="klasa w CSS">
+                    <img src="./images/klasa_w_CSS.png" alt="klasa w CSS" class = "notes notes__Picture">
                     <br>Można też robić to po ID ale wtedy nie .nazwaklasy tylko #nazwaID ale to nie jest dobra praktyka
                     <br><b>W ten sposób można dwa nagłówki typu h1 wystylować zupełnie inaczej, niezależnie od siebie
                         lub np nadać sekcji pamiętniczek inne tło niż całej reszcie strony</b>
@@ -100,12 +100,12 @@
         </article>
         <article id="Box_model">
             <header>
-                <h1 class = "notesArticleHeader" > Box model</h1>
+                <h1 class = "notes notes__Header notes__Header--Article" > Box model</h1>
             </header>
             <section>
 
-                <h2 class="notesSectionHeader">Dopasowywanie rozmiaru</h2>
-                <p>
+                <h2 class="notes notes__Header notes__Header--Article notes__Header--Article--Chapter">Dopasowywanie rozmiaru</h2>
+                <p class="notes notes__Paragraph">
                     Tymi parametrami można manipulować tylko jeśli strona ma display=block (nie działa na inline, chyba działa na block-inline)<br><br>
                     <b>max-width i min-width</b> -> określają rozmiar powyżej/poniżej którego dana sekcja nie zmieni już
                     bardziej swojego rozmiaru, niezależnie od tego jak zmniejszymy okno<br>
@@ -124,8 +124,8 @@
 
             <section>
 
-                <h2 class="notesSectionHeader">Border</h2>
-                <p>
+                <h2 class="notes notes__Header notes__Header--Article notes__Header--Article--Chapter">Border</h2>
+                <p class="notes notes__Paragraph">
                     Tworzy ramkę dookoła<br>
                     border: 3px nazwa_stylu (np solid to zwykła, dashed to przerywane kreseczki, dotted to kropeczki) #kolor <br>
                     Można też każda z tych wartości definiować osobno np border-width: , border-style: , border-color: <br>
@@ -137,31 +137,31 @@
 
             <section>
 
-                <h2 class = "notesSectionHeader">Padding</h2>
+                <h2 class = "notes notes__Header notes__Header--Article notes__Header--Article--Chapter">Padding</h2>
                 <p>
-                    <img src="./images/padding.png" alt="sposoby zapisu paddingu">
-                    <img src="./images/padding2.png" alt="padding wartości lustrzane">
+                    <img src="./images/padding.png" alt="sposoby zapisu paddingu" class = "notes notes__Picture">
+                    <img src="./images/padding2.png" alt="padding wartości lustrzane" class = "notes notes__Picture">
                     <br>
                     Zamiast paddingu można użyć funkcji margin, ona też odsuwa od krawędzi ale w przeciwieństwie do paddingu nie liczy się nigdy w rozmiar. Aby wyśrodkować coś na stronie można zrobić margin:auto, który nawet zmniejsza się jak zmniejsza się stronę
                 </p>
             </section>
 
             <section>
-                <h2 class = "notesSectionHeader">Box-sizing Content-box vs Border-box</h2>
-                <p>
+                <h2 class = "notes notes__Header notes__Header--Article notes__Header--Article--Chapter">Box-sizing Content-box vs Border-box</h2>
+                <p class="notes notes__Paragraph">
                     <b>Border-box</b> - Wszystko aż do border ma sumarycznie stały rozmiar. Zwiększenie borderu lub paddingu zmniejszy rozmiar contentu. <br>Np : element o rozmiarze width: 100px i height:100px po dodaniu paddingu, border i margin (kazdy po 10px)bedzie mieć już tylko 60px (margin znajduje się poza border więc się nie wlicza)<br> Toteż 10 border + 10 padding + 60 text + 10 padding + 10 border = 100px całość a 60px content
                     <br>
-                    <img src="./images/border_box.png" alt="border_box">
+                    <img src="./images/border_box.png" alt="border_box" class = "notes notes__Picture">
                     <br>
 
                     <b>Content-box</b> - Rozmiar kontentu jest stały a border i padding zwiększają rozmiar elementu..<br>
                     Toteż 10+10+100+10+10=140px ekement a 100px kontent<br>
-                    <img src="./images/content_box.png" alt="content_box">
+                    <img src="./images/content_box.png" alt="content_box" class = "notes notes__Picture">
                 </p>
             </section>
             <section>
-                <h2 class = "notesSectionHeader">Position</h2>
-                <p>
+                <h2 class = "notes notes__Header notes__Header--Article notes__Header--Article--Chapter">Position</h2>
+                <p class="notes notes__Paragraph">
                     position:absolute i relative - coś o absolutnej pozycji może nachodzić na inne elementy. Relativ służy do określenia w pozycji startowej od której będziemy odejmować lub dodawać dla tego elementu o pozycji absolutnej. Można tym elementem wyjechać ustawiając parametry takie jak bottom, right itp na ujemne wartości pixeli. <br>
                     position:fixed - sprawia, że relativem staje się okno czyli w miare scrollowania ten element jest cały czas na tej samej pozycji np:jakaś głupia reklama do scancelowania <br><br>
                     position:sticky - na początku zachowuje się jakby miało pozycje absolutną, ale po dotarciu do rogu ekranu jest fixed<br><br>
@@ -169,15 +169,15 @@
                 </p>
             </section>
             <section>
-                <h2 class = "notesSectionHeader">Z-index </h2>
-                    <p>
+                <h2 class = "notes notes__Header notes__Header--Article notes__Header--Article--Chapter">Z-index </h2>
+                    <p class="notes notes__Paragraph">
                         to co ma wartość z-index o większej wartości jest bardziej na wierzchu w przypadku gdy dwa elementy na siebie nachodzą
                     </p>
                 
             </section>
         </article>
     </main>
-    <footer>
+    <footer class = "notes__Footer">
         You go girl!!
     </footer>
 </body>
