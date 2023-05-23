@@ -1,18 +1,17 @@
-.mainPagebody {
-    
+.mainPagebody {   
     background: #fefe;
     margin:20px;
-    
-   
 }
 
 .myPicture{
-
-    width: 100%
+    width: 100%;
+    padding-right:50px;
+  
 }
 
 .mainHeader{
     color: deeppink;
+    padding-top:50px;
 }
 
 .mainPagesection {
@@ -29,13 +28,26 @@
 }
 .mainPageNavigator{
     color:blueviolet;
-    position:fixed;
-    bottom:10px;
-    right:10px; 
     background-color: #fefe;
+    position:fixed;
+    top:0px;
+    left:0px;
+    box-sizing: border-box;
+    padding:16px;
+    width:100%;
+    
 }
 .mainDiaryNavigator{
     color:blueviolet;
+}
+.mainPageToTopNavigator
+{
+    position:fixed;
+    right:0px; 
+    bottom:0px;
+    color:blueviolet;
+    background-color: #fefe;
+    width:100%;
 }
 .mainFooter{
     color: grey;
@@ -66,6 +78,8 @@ color:orange;
     position:fixed;
     bottom:10px;
     right:10px; 
+    text-decoration: none;
+    background-color: lemonchiffon;
 }
 
 
